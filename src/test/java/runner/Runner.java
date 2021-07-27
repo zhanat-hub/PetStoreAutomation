@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "steps",
-        tags = "@api",        // available tags: @regression , @smoke , @ui , @api
+        tags = "@regression",        // available tags: @regression , @smoke , @ui , @api
         dryRun = false
 )
 
