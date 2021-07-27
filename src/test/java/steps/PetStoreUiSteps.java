@@ -27,7 +27,7 @@ public class PetStoreUiSteps {
     @Then("User validates the post pet image section is expanded")
     public void user_validates_the_post_pet_image_section_is_expanded() {
         String expanded = psSwaggerMainPage.postPetImageSection.getAttribute("aria-expanded");
-        Assert.assertEquals("Section expanded","true", expanded);
+        Assert.assertEquals("true", expanded);
     }
 
     @When("User clicks on the post pet image section to collapse")
@@ -38,7 +38,7 @@ public class PetStoreUiSteps {
     @Then("User validates the post pet image section is collapsed")
     public void user_validates_the_post_pet_image_section_is_collapsed() {
         String expanded = psSwaggerMainPage.postPetImageSection.getAttribute("aria-expanded");
-        Assert.assertEquals("Section collapsed","false", expanded);
+        Assert.assertEquals("false", expanded);
     }
 
 }
